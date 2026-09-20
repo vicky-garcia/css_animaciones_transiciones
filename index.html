@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller CSS Avanzado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="hero-title">Estilos Avanzados en CSS</h1>
+        <p>Explorando transiciones, transformaciones y animaciones interactivas.</p>
+        <button class="hero-btn">Descubrir más</button>
+    </header>
+
+    <main class="cards-container">
+
+        <article class="card card-translate">
+            <div class="card-image gradient-1">Pregunta 1</div>
+            <h2>translateY(-20px)</h2>
+            <p><strong>¿Qué sucede si cambiamos translateY(-10px) por translateY(-20px)?</strong></p>
+            <p>La transformación visual de movimiento será mayor. 
+                Al aumentar el valor negativo, el elemento se desplazará el doble de distancia 
+                hacia arriba en el eje Y en comparación con los -10px originales, tal como lo experimentas 
+                al pasar el cursor sobre esta tarjeta.
+            </p>
+        </article>
+
+
+        <article class="card card-iteration">
+            <div class="card-image box-animada">Pregunta 2</div>
+            <h2>Iteration Count</h2>
+            <p><strong>¿Qué pasa si animation-iteration-count deja de ser infinite?</strong></p>
+            <p>La animación ya no se ejecutará de forma continua. Al quitar el valor "infinite", 
+                la animación se detendrá tras completarse el número de repeticiones especificado (por defecto, 1 vez). 
+                Observa el cuadro arriba: solo late una vez al cargar la página.
+            </p>
+        </article>
+
+        <article class="card card-diff">
+            <div class="card-image auto-animada">Pregunta 3</div>
+            <h2>Animación vs Hover</h2>
+            <p><strong>¿Qué diferencia hay entre la animación de .product-image y el hover de .product?</strong></p>
+            <p>La diferencia clave es que una animación (como la del bloque de arriba) utiliza `@keyframes` y 
+                puede ejecutarse automáticamente y de forma continua. En cambio, el efecto `:hover` 
+                de esta tarjeta es una transición que responde a un cambio de estado; solo ocurre de manera progresiva 
+                cuando interactúas pasando el cursor.
+            </p>
+        </article>
+
+        <article class="card card-shadow">
+            <div class="card-image gradient-2">Pregunta 4</div>
+            <h2>Sombra Externa</h2>
+            <p><strong>¿Qué propiedad genera la sombra?</strong></p>
+            <p>La propiedad que genera la sombra externa de los elementos contenedores es `box-shadow`. 
+                Permite mejorar la apariencia de la interfaz dando profundidad. 
+                Para dar sombra directamente al texto se utilizaría `text-shadow`.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Taller de CSS Avanzado</p>
+    </footer>
+
+</body>
+</html>
